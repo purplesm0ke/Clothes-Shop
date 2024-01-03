@@ -1,0 +1,24 @@
+.ProductCard{
+    display: flex;
+    flex-direction: column;
+    max-width: 255px;
+    gap: 5px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.ProductCardImg{
+    max-width: 318px;
+    max-height: 318px;
+}
+.ProductCardName{
+    font-size: 19px;
+    font-weight: 700;
+}
+.ProductCardPrice{
+    font-size: 17px;
+    color: #3C3C3C;
+    font-weight: 400;
+}
+.Star{
+    align-self: first;
+}
