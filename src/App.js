@@ -2,6 +2,7 @@ import {ProductsContainer} from "./components/ProductsContainer/ProductsContaine
 import {MainLayout} from "./layout/MainLayout/MainLayout";
 import {useEffect, useState} from "react";
 import axios from "axios";
+import {Banner} from "./components/Banner/Banner";
 
 function App() {
     const [products, setProducts] = useState([]);
@@ -12,6 +13,7 @@ function App() {
     }, [])
     return (
         <MainLayout>
+            <Banner/>
             {products?.map(productsWithCategory => <ProductsContainer key={productsWithCategory?.category}
                                                                       title={productsWithCategory?.category}
                                                                       products={productsWithCategory.products}
