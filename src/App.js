@@ -3,6 +3,7 @@ import {MainLayout} from "./layout/MainLayout/MainLayout";
 import {useEffect, useState} from "react";
 import axios from "axios";
 import {Banner} from "./components/Banner/Banner";
+import {Info} from "./components/Info/Info";
 
 function App() {
     const [products, setProducts] = useState([]);
@@ -19,6 +20,7 @@ function App() {
                                                                       products={productsWithCategory.products}
                 />
             )}
+
         </MainLayout>
     );
 }
