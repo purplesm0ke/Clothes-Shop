@@ -1,0 +1,14 @@
+.BlogCard{
+}
+.BlogImage{
+    width: 340px;
+    height: 260px;
+}
+.BlogTitle{
+    font-size: 23px;
+    font-weight: 700;
+}
+.BlogDescription{
+    font-size: 15px;
+    font-weight: 400;
+}

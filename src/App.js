@@ -4,6 +4,7 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 import {Banner} from "./components/Banner/Banner";
 import {Info} from "./components/Info/Info";
+import {Blog} from "./components/Blog/Blog";
 
 function App() {
     const [products, setProducts] = useState([]);
@@ -20,7 +21,7 @@ function App() {
                                                                       products={productsWithCategory.products}
                 />
             )}
-
+            <Blog/>
         </MainLayout>
     );
 }

@@ -1,0 +1,21 @@
+.BlogContainer{
+    display: flex;
+    flex-direction: column;
+}
+.BlogHeader{
+    font-size: 31px;
+    font-weight: bold;
+}
+.MoreArticles{
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+.BlogList{
+    display: flex;
+    justify-content: space-between;
+}
+.TitlesBlog{
+    display: flex;
+    justify-content: space-between;
+}
