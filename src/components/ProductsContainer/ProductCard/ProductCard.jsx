@@ -1,5 +1,6 @@
 import {FaRegStar} from "react-icons/fa";
 import styles from "./ProductCard.module.css"
+import {Button} from "../../Button/Button";
 export const ProductCard = ({image, name, price}) => {
     return (
         <div className={styles.ProductCard}>
@@ -7,6 +8,8 @@ export const ProductCard = ({image, name, price}) => {
             <img src={image} alt={name} className={styles.ProductCardImg}/>
             <h3 className={styles.ProductCardName}>{name}</h3>
             <p className={styles.ProductCardPrice}>{price} ₽</p>
+             <Button>Добавить в корзину</Button>
+
         </div>
     )
 }
