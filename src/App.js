@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import {ProductsContainer} from "./components/ProductsContainer/ProductsContainer";
+import {MainLayout} from "./layout/MainLayout/MainLayout";
+import {useEffect, useState} from "react";
+import axios from "axios";
+import {Banner} from "./components/Banner/Banner";
+import {Info} from "./components/Info/Info";
+import {Blog} from "./components/Blog/Blog";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [products, setProducts] = useState([]);
+    useEffect(() => {
+        axios.get("http://192.168.0.104:5555/product").then((res) => {
+            setProducts(res.data);
+        });
+    }, [])
+    return (
+        <MainLayout>
+            <Banner/>
+            {products?.map(productsWithCategory => <ProductsContainer key={productsWithCategory?.category}
+                                                                      title={productsWithCategory?.category}
+                                                                      products={productsWithCategory.products}
+                />
+            )}
+            <Blog/>
+        </MainLayout>
+    );
 }
 
 export default App;
