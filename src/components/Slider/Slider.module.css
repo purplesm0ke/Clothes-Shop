@@ -3,3 +3,13 @@
     align-items: center;
     justify-content: space-between;
 }
+.Slider{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.SliderBtn{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
