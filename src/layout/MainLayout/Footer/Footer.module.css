@@ -1,0 +1,19 @@
+.Footer{
+    background: #121214;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    gap: 265px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.FooterList{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.Icons{
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+}

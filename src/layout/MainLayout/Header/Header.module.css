@@ -1,0 +1,21 @@
+
+.Header{
+    background: #b3b8da;
+    color: black;
+    padding: 10px 0px;
+}
+.test{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+.HeaderList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+    list-style: none;
+}
+.Logo{
+    width: 100px;
+}
