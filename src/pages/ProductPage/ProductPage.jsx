@@ -17,10 +17,10 @@ export const ProductPage = () => {
             <div className={styles.ProductPlace}>
                 <img className={styles.ProductImg} src={`http://192.168.0.104:5555/${product?.image}`} alt=""/>
                 <div className={styles.ProductInfo}>
-                    <p>{product?.productName}</p>
-                    <p>{product?.price} ₽</p>
-                    <p>Размер</p>
-                    <Button>Добавить  в корзину</Button>
+                    <p className={styles.ProductName}>{product?.productName}</p>
+                    <p className={styles.ProductPrice}>{product?.price} ₽</p>
+                    <p>{product?.description}</p>
+                    <Button className={styles.ProductBtn}>Добавить в корзину</Button>
                 </div>
             </div>
         </div>

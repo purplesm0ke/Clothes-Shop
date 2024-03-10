@@ -1,6 +1,8 @@
 .ProductInfo{
     display: flex;
     flex-direction: column;
+    width: 480px;
+    gap: 6px;
 }
 .ProductImg{
     width: 400px;
@@ -10,4 +12,16 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 30px;
+    gap: 5px;
+}
+.ProductName{
+    font-weight: bold;
+    font-size: 35px;
+}
+.ProductPrice{
+    font-size: 20px;
+}
+.ProductBtn{
+    font-size: 14px;
 }

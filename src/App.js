@@ -1,10 +1,11 @@
 import {ProductsContainer} from "./components/ProductsContainer/ProductsContainer";
 import {MainLayout} from "./layout/MainLayout/MainLayout";
-import {useEffect, useState} from "react";
+import {useContext, useEffect, useState} from "react";
 import axios from "axios";
 import {Banner} from "./components/Banner/Banner";
 import {Info} from "./components/Info/Info";
 import {Blog} from "./components/Blog/Blog";
+import {CartContext} from "./context/cartContext/CartContext";
 
 function App() {
     const [products, setProducts] = useState([]);
@@ -13,6 +14,8 @@ function App() {
             setProducts(res.data);
         });
     }, [])
+    const {cartList}=useContext(CartContext)
+    console.log(cartList)
     return (
         <MainLayout>
             <Banner/>

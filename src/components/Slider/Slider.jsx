@@ -44,6 +44,7 @@ export const Slider = ({slidesNumber = 4, slides = []}) => {
                                                    price={product.price}
                                                    name={product?.productName}
                                                    id={product.id}
+                                                   product={product}
                 />)}
             </div>
             <div className={styles.Slider}>
